@@ -1,0 +1,15 @@
+$react-float-grid-options:(
+
+)!default;
+
+$react-float-grid-responsive:(
+  span: auto,
+  sm:320px,
+  md:767px,
+  lg:1023px,
+)!default;
+
+@import 'node_modules/webkit-sass-float-grid/dist/webkit-sass-float-grid.scss';
+@include webkit-sass-float-grid($react-float-grid-responsive, 24, '.grid');
+.react-float-grid{
+}
