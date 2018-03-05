@@ -15,11 +15,11 @@ let templateFile = path.join(__dirname,'../src/components/react-float-grid.js');
 
 
 let exampleRs = fileRegExp.fileGetContent(exampleFile,exampleRE);
-let templateRs = fileRegExp.fileGetContent(templateFile,templateRE);
+// let templateRs = fileRegExp.fileGetContent(templateFile,templateRE);
 
 // set default readme file:
 fs.writeFileSync(readmeFile, fs.readFileSync(_readmeFile,'utf-8'));
 
 //do replace:
-fileRegExp.fileReplaceContent(readmeFile,targetPropsRE,templateRs);
+// fileRegExp.fileReplaceContent(readmeFile,targetPropsRE,templateRs);
 fileRegExp.fileReplaceContent(readmeFile,targetUsageRE,exampleRs);
